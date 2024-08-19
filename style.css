@@ -16,24 +16,24 @@ header {
     background-color: #5E6C4C;
     height: 600px;
     width: 100%;
-    transform: translateY(-220px) skewY(-12deg);
+    transform: translateY(-180px) skewY(-12deg);
 }
 
 .header-image {
     position: relative;
-    box-shadow: 0 0 10px #000000;
 }
 
 .header-image > img {
     width: auto;
     height: 420px;
+    box-shadow: 0 0 10px #000000;
 }
 
 img + h1 {
     position: absolute;
     font-size: 35px;
     margin: 0;
-    bottom: 0;
+    bottom: 6px;
     left: 12px;
 }
 
@@ -70,4 +70,57 @@ img + h1 {
 
 .external-links > li:hover {
     scale: 1.25;
+}
+
+main {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 60%;
+}
+
+main > h1 {
+    margin-right: auto;
+    font-size: 2.5rem;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.grid-item {
+    box-shadow: 1px 0 8px #000000;
+
+}
+
+.grid-item > img {
+    width: 100%;
+}
+
+.text-box {
+    padding: 24px;
+}
+
+.title-and-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -24px;
+}
+
+.title-and-link > a {
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.title-and-link > a:hover {
+    rotate: 360deg;
+}
+
+.text-box > p {
+    margin: -10px 0 40px;
 }
