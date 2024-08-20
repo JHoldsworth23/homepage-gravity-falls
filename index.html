@@ -11,19 +11,20 @@
 <body>
     <header>
         <div class="slanted-bg"></div>
-        <div class="header-image">
-            <img src="images/grunkle-stan.jpg" alt="">
+        <div class="wrapper">
+           <img class="profile-image" src="images/grunkle-stan.jpg" alt="">
             <h1>Stanley "Stan" Pines</h1>
+            <div class="about-me-section">
+                <h1>About me</h1>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique, deserunt obcaecati corrupti aspernatur animi sunt sint autem tenetur nostrum architecto labore, tempore nisi vel. Architecto sapiente tenetur cupiditate ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores itaque aliquam, placeat suscipit voluptate laborum veniam voluptatibus deleniti.</div>
+                <ul class="external-links">
+                    <li><a aria-label="GitHub" href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a aria-label="X (Twitter)" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div> 
         </div>
-        <div class="about-me-section">
-            <h1>About me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam similique, deserunt obcaecati corrupti aspernatur animi sunt sint autem tenetur nostrum architecto labore, tempore nisi vel. Architecto sapiente tenetur cupiditate ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores itaque aliquam, placeat suscipit voluptate laborum veniam voluptatibus deleniti.</p>
-            <ul class="external-links">
-                <li><a aria-label="GitHub" href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a aria-label="X (Twitter)" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
-        </div>
+        
     </header>
     <main>
         <h1>My work</h1>
@@ -104,8 +105,8 @@
             </ul>
         </div>
         <picture>
-            <source srcset="" media=""/>
-            <source srcset="" media="" />
+            <source media="(max-width: 1239px)" srcset="images/mystery-shack-800w.jpg" />
+            <source media="(min-width: 1240px)" srcset="images/mystery-shack.jpg" />
             <img src="images/mystery-shack.jpg" alt="" />
         </picture>
     </footer>
