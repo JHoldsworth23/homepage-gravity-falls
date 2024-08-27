@@ -43,8 +43,11 @@ header {
     align-items: center;
 }
 
-.profile-image {
+.image-wrapper {
     z-index: 1;
+}
+
+.profile-image {
     width: auto;
     max-height: 420px;
     box-shadow: 0 0 10px #000000;
@@ -52,10 +55,9 @@ header {
 
 img + h1 {
     position: absolute;
-    z-index: 1;
     font-size: 32px;
     margin: 0;
-    transform: translate(-107%, 520%);
+    transform: translate(16px, -45px);
 }
 
 .about-me-section {
@@ -96,7 +98,7 @@ img + h1 {
 }
 
 main {
-    margin: 40px auto;
+    margin: 0 auto 30px;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -227,7 +229,7 @@ footer img {
 
     .profile-image + h1 {
         font-size: 2.25rem;
-        color: #E7E5D1;
+        color: #FFFFEC;
         letter-spacing: 1.2px;
         transform: translate(90%, 40%);
     }
