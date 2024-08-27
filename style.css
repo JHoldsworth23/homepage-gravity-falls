@@ -98,6 +98,10 @@ img + h1 {
     scale: 1.25;
 }
 
+.external-links a {
+    color: #000000;
+}
+
 main {
     margin: 40px auto;
     display: flex;
@@ -305,9 +309,33 @@ footer img {
     .about-me-section > .external-links {
         justify-content: center;
         float: none;
-        font-size: 2.4rem;
+        font-size: 2.5rem;
         margin: 14px 0 0;
         padding: 0;
         visibility: visible;
-    } 
+    }
+
+    main {
+        margin: 60px auto;
+    }
+
+    main > h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+    }
+
+    .grid-item {
+        width: 85vw;
+    }
+
+    .text-box > p {
+        font-size: 18px;
+        margin-top: 2px;
+    }
 }
