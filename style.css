@@ -248,7 +248,7 @@ footer img {
     }
 
     .about-me-section > .external-links {
-        display: none;
+        visibility: hidden;
     }
 
     .text {
@@ -259,4 +259,55 @@ footer img {
     .grid-container {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0;
+        width: 98vw;
+    }
+
+    .slanted-bg {
+        width: 100vw;
+        transform: translateY(-500px) skewY(-24deg);
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 98vw;
+    }
+
+    .profile-image + h1 {
+        font-size: 2.5rem;
+        color: #000000;
+        background-color: rgba(224, 202, 178, 0.6);
+        border-radius: 0;
+        width: 250px;
+        transform: translate(18px, 260px);
+    }
+
+    .about-me-section {
+        max-width: 100%;
+        margin: 28px 0 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .text {
+        width: 90vw;
+        line-height: 30px;
+        color: #3a3a3a;
+        margin: 0 -14px;
+    }
+
+    .about-me-section > .external-links {
+        justify-content: center;
+        float: none;
+        font-size: 2.4rem;
+        margin: 14px 0 0;
+        padding: 0;
+        visibility: visible;
+    } 
 }
