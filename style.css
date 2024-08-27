@@ -102,6 +102,10 @@ img + h1 {
     color: #000000;
 }
 
+.external-links a:visited {
+    color: purple;
+}
+
 main {
     margin: 40px auto;
     display: flex;
